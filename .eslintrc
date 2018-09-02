@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-trailing-spaces": "error",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "no-alert": "error",
+    "no-multi-spaces": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "eol-last": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      1,
+      "always"
+    ],
+    "no-eval": "error",
+    "global-require": "error",
+    "camelcase": "error",
+    "no-multiple-empty-lines": "error"
+  }
+}
