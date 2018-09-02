@@ -5,7 +5,7 @@ const NewsList = ({ news }) => (
   <Collapsible accordion defaultActiveKey={1}>
     {
       news.map(item =>
-        <CollapsibleItem header={item.webTitle}>
+        <CollapsibleItem header={item.webTitle} key={item.id}>
           Lorem ipsum dolor sit amet.
         </CollapsibleItem>
       )
