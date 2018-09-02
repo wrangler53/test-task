@@ -26,7 +26,7 @@ class App extends Component {
       <div className="container">
         <h1>The Guardian News</h1>
         <Error hasError={this.state.hasError}>
-          <Button waves='light' onClick={() => this.loadTenLastNews()}>
+          <Button className="btn_refresh waves-effect" onClick={() => this.loadTenLastNews()}>
             Refresh
             <Icon right>refresh</Icon>
           </Button>

@@ -1,12 +1,20 @@
 .collapsible {
   &-header {
+    transition: all .3s;
+    @include flex(row, space-between);
 
     &:after {
-      content: '',
-    }
+      content: '\e313';
+      transition: all .3s;
+      @include font(1.714rem, inherit, inherit, $Material-Icons);
+    }  
 
     &.active {
-      // background: $light-grey;
+      background: $light-blue;
+
+      &:after {
+        transform: rotate(180deg);
+      }    
     }
   }
 }

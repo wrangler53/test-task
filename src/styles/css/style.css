@@ -12,11 +12,35 @@ strong, b {
 a {
   display: block; }
 
+.btn {
+  display: block; }
+  .btn_refresh {
+    margin: 0 auto 30px;
+    padding: 10px 15px;
+    line-height: 10px;
+    background: #4695C5 !important; }
+
 .error_msg {
   font-size: 1.143rem;
   color: #f00;
   text-align: center;
+  font-family: inherit;
   font-weight: 400; }
 
-.collapsible-header:after {
-  content: ""; }
+.collapsible-header {
+  transition: all .3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .collapsible-header:after {
+    content: '\e313';
+    transition: all .3s;
+    font-size: 1.714rem;
+    color: inherit;
+    text-align: inherit;
+    font-family: "Material Icons";
+    font-weight: 400; }
+  .collapsible-header.active {
+    background: #dce5f4; }
+    .collapsible-header.active:after {
+      transform: rotate(180deg); }
