@@ -1,0 +1,12 @@
+.collapsible {
+  &-header {
+
+    &:after {
+      content: '',
+    }
+
+    &.active {
+      // background: $light-grey;
+    }
+  }
+}

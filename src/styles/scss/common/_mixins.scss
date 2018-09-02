@@ -1,0 +1,11 @@
+@mixin flex($flex-direction: column) {
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+@mixin font($font-size, $color, $text-align, $font-weight: 400) {
+  font-size: $font-size;
+  color: $color;
+  text-align: $text-align;
+  font-weight: $font-weight;
+}

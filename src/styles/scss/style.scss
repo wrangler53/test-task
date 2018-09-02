@@ -1,1 +1,8 @@
-@import './_common';
+// Common styles
+@import './common/_variables';
+@import './common/_mixins';
+@import './common/_common';
+
+// Components styles
+@import '../../components/Error/_Error';
+@import '../../components/NewsList/_Accordion';

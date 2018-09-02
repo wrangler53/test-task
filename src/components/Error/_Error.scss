@@ -1,0 +1,5 @@
+.error {
+  &_msg {
+    @include font(1.143rem, $red, center);
+  }
+}
