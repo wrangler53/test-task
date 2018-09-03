@@ -12,12 +12,16 @@ strong, b {
 a {
   display: block; }
 
+.container {
+  margin-bottom: 20px; }
+
 .btn {
   display: block; }
   .btn_refresh {
     margin: 0 auto 30px;
     padding: 10px 15px;
-    line-height: 10px;
+    line-height: 10px; }
+  .btn_blue {
     background: #4695C5 !important; }
 
 .error_msg {
@@ -31,7 +35,8 @@ a {
   transition: all .3s;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: stretch; }
   .collapsible-header:after {
     content: '\e313';
     transition: all .3s;
@@ -44,3 +49,9 @@ a {
     background: #dce5f4; }
     .collapsible-header.active:after {
       transform: rotate(180deg); }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }

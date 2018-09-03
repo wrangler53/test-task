@@ -10,10 +10,10 @@ const axiosInstance = axios.create({
   baseUrl
 });
 
-export const getTenLastNews = async () => {
-  const url = `${baseUrl}/search?api-key=${apiKey}`;
+export const getNews = async (page) => {
+  const url = `${baseUrl}/search?page=${page}&api-key=${apiKey}`;
   const response = await axiosInstance.get(url);
-  return response.data.response.results;
+  return response.data.response;
 };
 
 export const getNewsItemBody = async (apiUrl) => {
