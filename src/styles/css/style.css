@@ -21,6 +21,8 @@ a {
     margin: 0 auto 30px;
     padding: 10px 15px;
     line-height: 10px; }
+  .btn_navigation {
+    width: 25%; }
   .btn_blue {
     background: #4695C5 !important; }
 

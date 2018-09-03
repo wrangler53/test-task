@@ -7,18 +7,18 @@ const Pagination = ({ currentPage, totalPagesCount, goToNextPage, goToPreviousPa
       <Button
         onClick={() => goToPreviousPage()}
         disabled={currentPage === 1}
-        className="btn_blue waves-effect"
+        className="btn_blue btn_navigation waves-effect"
       >
         <Icon left>keyboard_arrow_left</Icon>
         Previous Page
       </Button>
       <div className="pages-count">
-        {currentPage} of {totalPagesCount} pages
+        [{currentPage}] of {totalPagesCount} pages
       </div>
       <Button
         onClick={() => goToNextPage()}
         disabled={currentPage === totalPagesCount}
-        className="btn_blue waves-effect"
+        className="btn_blue btn_navigation waves-effect"
       >
         Next Page
         <Icon right>keyboard_arrow_right</Icon>
